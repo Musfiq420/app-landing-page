@@ -7,10 +7,14 @@ import InputBase from '@material-ui/core/InputBase';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import EmailIcon from '@material-ui/icons/Email';
+import clsx from "clsx";
+
 
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
-    
+    section: {
+        background: palette.background.paper,
+    },
     leftGrid: {
         display: 'flex',
         
@@ -41,7 +45,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
         
     },
     formCard: {
-        backgroundColor: palette.secondary.main,
+        backgroundColor: palette.background.default,
         color: palette.primary.main,
         margin: '10px',
     },
@@ -65,10 +69,10 @@ const Contact = () => {
     const classes = useStyles();
 
     return(
-        <section className='section' id='contact'>
+        <section className={clsx('section',classes.section)} id='contact'>
           <div className='container'>  
             <div  className='flex flex-column justify-center items-center'>
-                <Typography variant='h4' >Feel free to drop us a line</Typography>
+                <Typography variant='h4' color='textPrimary'>Feel free to drop us a line</Typography>
                 <Typography variant='inherit' color='textSecondary'  className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Typography>
                 <Typography color='textSecondary' >Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</Typography>
             </div>

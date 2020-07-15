@@ -9,18 +9,21 @@ import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import IconButton from '@material-ui/core/IconButton';
+import clsx from "clsx";
 
 
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
-    
+  section: {
+    background: palette.background.default,
+  },
     expansionTyp: {
         flexGrow: 1,
     }
     
 }))
 
-const ExpansionPanel = withStyles({
+const ExpansionPanel = withStyles(({palette, ...theme }) => ({
     root: {
       border: '1px solid rgba(0, 0, 0, .050)',
       boxShadow: 'none',
@@ -33,11 +36,11 @@ const ExpansionPanel = withStyles({
       },
       '&$expanded': {
         margin: '7px 0px 7px 0px',
-        backgroundColor: '#f8fafa',
+        backgroundColor: palette.background.paper,
       },
     },
     expanded: {},
-  })(MuiExpansionPanel);
+  }))(MuiExpansionPanel);
   
   const ExpansionPanelSummary = withStyles(({palette, ...theme }) => ({
     root: {
@@ -79,10 +82,10 @@ const Faq = () => {
 
 
     return(
-        <section className='section' id='faq'>
+        <section className={clsx('section',classes.section)}  id='faq'>
           <div className='çontainer'>
             <div  className='flex flex-column justify-center items-center'>
-                <Typography variant='h4' >Frequently Asked Questions</Typography>
+                <Typography variant='h4' color='textPrimary'>Frequently Asked Questions</Typography>
                 <Typography variant='inherit' color='textSecondary'  className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Typography>
             </div>
             <Grid container sm={12} xs={12}>

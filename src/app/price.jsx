@@ -14,7 +14,7 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
     section:{
-        backgroundColor: palette.secondary.main,
+        background: palette.background.default,
     },
     cards: {
         display: 'flex',
@@ -104,7 +104,7 @@ const Price = () => {
         <section className={clsx(classes.section,'section')} id='pricing'>
           <div className='container'>
             <div  className='flex flex-column justify-center items-center'>
-                <Typography variant='h4' >Pricing</Typography>
+                <Typography variant='h4' color="textPrimary">Pricing</Typography>
                 <Typography variant='inherit' color='textSecondary' className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Typography>
             </div>
 

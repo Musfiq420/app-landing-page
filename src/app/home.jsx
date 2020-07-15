@@ -17,7 +17,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
         backgroundPosition: 'top-center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-
+        background: palette.background.paper,
       [theme.breakpoints.down("xs")]: {
         paddingTop: '3rem',
       }
@@ -41,14 +41,14 @@ const Home = () => {
               <Grid item sm={6} xs={12}>
               
                 <div className="max-w-400 ">
-                  <h1 className="font-bold  text-40 " >
+                  <Typography variant='h1' className="font-bold  text-40 " color="textPrimary" >
                     Get Medical Service at Home
-                  </h1>
+                  </Typography>
                 </div>
-                <p className="my-6">
+                <Typography variant='body1' className="my-6" color="textSecondary">
                   Stop worrying about your health, get prescribed at home through <br />
                   our beautifully UI-designed medical service app at free of cost
-                </p>
+                </Typography>
                 <div className="flex">
                   <Button
                     className="mr-4 border-radius-8 elevation-z3"

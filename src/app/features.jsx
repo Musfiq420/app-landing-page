@@ -15,7 +15,7 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   section: {
-    backgroundColor: palette.secondary.main,
+    background: palette.background.default,
   },
   cards: {
     display: 'flex',
@@ -85,7 +85,7 @@ const Features = () => {
         
           
             <div  className='flex flex-column justify-center items-center'>
-              <Typography variant="h4" >Why we are different</Typography>
+              <Typography variant="h4" color="textPrimary" >Why we are different</Typography>
               <Typography variant="inherit" color="textSecondary" className="mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</Typography>
             </div>
           
@@ -97,7 +97,7 @@ const Features = () => {
                   <CardContent className={classes.cardContent}>
                       <item.icon color="primary" className={classes.icon} />
                     
-                    <Typography variant="h6" className={classes.title}  align="center" gutterBottom>
+                    <Typography variant="h6" color="textPrimary" className={classes.title}  align="center" gutterBottom>
                         {item.title}
                     </Typography>
                     <Typography className={classes.pos} color="textSecondary" align="center">

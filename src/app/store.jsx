@@ -11,6 +11,7 @@ const useStyles = makeStyles(({ palette, ...theme }) => ({
 
     root:{
       paddingBottom: "60px",
+      background: palette.background.paper,
     },
     gridStyle: {
         display: "flex",
@@ -39,7 +40,7 @@ const Store = () => {
             <Grid container spacing={2}>
                 <Grid item sm={6} xs={12} >
                     <div className={classes.gridStyle}>
-                        <Typography variant="h4" >Get prescription, Order Medicine from Home</Typography>
+                        <Typography variant="h4" color="textPrimary">Get prescription, Order Medicine from Home</Typography>
                         <Typography className="mt-6 mb-2" color="textSecondary">
                   Stop worrying about your health, get prescribed at home through <br />
                   our beautifully UI-designed medical service app at free of cost

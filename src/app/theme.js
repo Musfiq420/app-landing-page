@@ -12,6 +12,8 @@ export const materialTheme = createMuiTheme({
   palette: {
     type: "light",
     primary: {
+      
+      light: "#67daff",
       main: "#6C63FF",
       contrastText: "rgba(255,255,255,0.95)"
     },
@@ -19,6 +21,10 @@ export const materialTheme = createMuiTheme({
       main: "#f6f5ff",
       contrastText: "#212121"
     },
+    text: {
+      
+    },
+    
     contrastThreshold: 3,
     tonalOffset: 0.1
   },

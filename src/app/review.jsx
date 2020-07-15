@@ -5,11 +5,14 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Rating from '@material-ui/lab/Rating';
 import Avatar from '@material-ui/core/Avatar';
+import clsx from "clsx";
 
 
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
-    
+  section: {
+    background: palette.background.default,
+  },
     headlineStyle:{
         display: 'flex',
         flexDirection: 'column',
@@ -79,10 +82,10 @@ const Review = () => {
       ];
 
     return(
-      <section className='section' id='review'>
+      <section className={clsx('section',classes.section)} id='review'>
           <div className='container'>
             <div  className='flex flex-column justify-center items-center'>
-                <Typography variant='h4' >What our customers say</Typography>
+                <Typography variant='h4' color="textPrimary">What our customers say</Typography>
                 <Typography variant='inherit' color='textSecondary' className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Typography>
             </div>
 

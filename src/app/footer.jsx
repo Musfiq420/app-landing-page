@@ -11,7 +11,6 @@ import Youtube from './youtube.svg';
 const useStyles = makeStyles(({ palette, ...theme }) => ({
   section: {
     backgroundColor: palette.primary.main,
-    marginTop: "60px",
   },
   logo: {
     letterSpacing: 2.5

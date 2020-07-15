@@ -13,7 +13,7 @@ import clsx from "clsx";
 
 const useStyles = makeStyles(({ palette, ...theme }) => ({
     backgroundStyle: {
-        backgroundColor: palette.secondary.main,
+        background: palette.background.default,
       },
 }));
 
@@ -47,7 +47,7 @@ const Features2 = () => {
                 <Grid container sm={12} xs={12}>
                     <Grid container sm={12} xs={12} className='flex flex-column justify-center items-center'>
                     
-                            <Typography variant="h4" align='center' >Quick & Easy Process With Best Features</Typography>
+                            <Typography variant="h4" align='center' color="textPrimary">Quick & Easy Process With Best Features</Typography>
                             <Typography variant="inherit" color="textSecondary" align='center' className="mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</Typography>
                         
                         </Grid>
@@ -57,7 +57,7 @@ const Features2 = () => {
                             <Grid item className='flex flex-start max-w-400 mt-8'>    
                                 <item.icon color="primary" className='text-40 mr-6' />
                                 <div>
-                                    <Typography variant="h6">{item.title}</Typography>
+                                    <Typography variant="h6" color="textPrimary">{item.title}</Typography>
                                     <div>
                                     <Typography variant="caption" color="textSecondary">{item.description}</Typography>
                                     </div>
