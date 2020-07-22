@@ -10,7 +10,7 @@ const buttonOption = {
 
 export const materialTheme = createMuiTheme({
   palette: {
-    type: "dark",
+    type: "light",
     primary: {
       
       light: "#67daff",
